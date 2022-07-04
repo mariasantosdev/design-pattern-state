@@ -1,4 +1,8 @@
 package br.com.design.patterns.state.payment;
 
-public class Regular {
+class Regular extends PaymentSituation {
+    @Override
+    public void planAction() {
+        System.out.println("Plano liberado!");
+    }
 }

@@ -2,7 +2,10 @@ package br.com.design.patterns.state.payment;
 
 import exception.DomainException;
 
-public abstract class PaymentSituation {
+abstract class PaymentSituation {
+
+    //TODO pensar em nome melhor para esse metodo
+    public abstract void planAction();
     public void reimbursed(Payment payment) throws DomainException {
         throw new DomainException("Pagamento nao pode ser reembolsado!");
     }
