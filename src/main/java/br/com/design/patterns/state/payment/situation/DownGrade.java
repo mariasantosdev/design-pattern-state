@@ -2,7 +2,12 @@ package br.com.design.patterns.state.payment.situation;
 
 import br.com.design.patterns.state.payment.Payment;
 
-class DownGrade extends PaymentSituation {
+public class DownGrade extends PaymentSituation {
+
+    public DownGrade() {
+        this.planAction();
+    }
+
     @Override
     public void planAction() {
         System.out.println("Downgrade do Plano feito com sucesso!");

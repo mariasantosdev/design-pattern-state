@@ -2,7 +2,11 @@ package br.com.design.patterns.state.payment.situation;
 
 import br.com.design.patterns.state.payment.Payment;
 
-class Regular extends PaymentSituation {
+public class Regular extends PaymentSituation {
+
+    public Regular() {
+        this.planAction();
+    }
     @Override
     public void planAction() {
         System.out.println("Plano regular liberado!");
